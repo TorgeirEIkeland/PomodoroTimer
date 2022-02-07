@@ -29,23 +29,23 @@ struct MainView: View {
                         Text("YOUR TOPICS")
                             .padding(.bottom, 10)
                         Button{
-              //              uiAlertController.showAlert(title: "", message: nil, preferredStyle: .alert)
+//                            uiAlertController.showAlert(title: "", message: nil, preferredStyle: .alert)
                         
                         }label:{
                             Label("Add new topic", systemImage: Consts.Icons.plusIcon)
                     }
                 }
                 }
-              //  VStack(){
-                   // List{
-            //            ForEach(uiAlertController.topics, id: \.self){ topic in
-                  //          Text(topic)
-                     //   }
-                   // }
+                VStack(){
+                    List{
+                        ForEach(uiAlertController.topics, id: \.self){ topic in
+                            Text(topic)
+                        }
+                    }
                 }
             }
         }
- //   }
+   }
 }
 
 struct MainView_Previews: PreviewProvider {
@@ -53,4 +53,3 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
-

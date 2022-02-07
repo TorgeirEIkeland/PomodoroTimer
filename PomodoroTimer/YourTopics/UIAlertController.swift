@@ -11,36 +11,32 @@ import UIKit
 
 
 class UIAlertController : ObservableObject{
-/*
+
     var mainView: MainView = MainView()
     
     @Published var topics = ["JavaScript","WW2 History"]
    
-    
+
     
 
-    private func showAlert(title: String, message: String?, preferredStyle: String?){
-        let ac = UIAlertController(title: "Enter topic", message: nil, preferredStyle: context)
-        ac.addTextField()
-
-        let submitAction = UIAlertAction(title: "Submit", style: .default){ [unowned ac] _ in
-            let answer = ac.textFields![0]
-            answer.text = input
-            topics.append(input)
-            
             
         }
-        ac.addAction(submitAction)
 
-        if let ac = self.(ofType: UIAlertController.self){
-            ac.present(ac, animated: true)
-            
-        }
-}
- */
-}
-
-
+//private func showAlert(title: String, message: String?, preferredStyle: String?){
+//    let ac = UIAlertController(title: "Enter topic", message: nil, preferredStyle: context)
+//    ac.addTextField()
+//
+//    let submitAction = UIAlertAction(title: "Submit", style: .default){ [unowned ac] _ in
+//        let answer = ac.textFields![0]
+//        answer.text = input
+//        topics.append(input)
+//
+//
+//    }
+//    ac.addAction(submitAction)
+//
+//    if let ac = self.(ofType: UIAlertController.self){
+//        ac.present(ac, animated: true)
 
     
 //let alert = UIAlertController(
