@@ -19,7 +19,6 @@
 		819385D727AA74C7005E2461 /* PomodoroTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385D627AA74C7005E2461 /* PomodoroTimerUITests.swift */; };
 		819385D927AA74C7005E2461 /* PomodoroTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385D827AA74C7005E2461 /* PomodoroTimerUITestsLaunchTests.swift */; };
 		D46EEBCC27B0774800D4EF12 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EEBCB27B0774800D4EF12 /* TimerView.swift */; };
-		D4DD6CFE27B143040081AC8A /* Introduction in Resources */ = {isa = PBXBuildFile; fileRef = D4DD6CFD27B143040081AC8A /* Introduction */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +54,6 @@
 		819385D627AA74C7005E2461 /* PomodoroTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerUITests.swift; sourceTree = "<group>"; };
 		819385D827AA74C7005E2461 /* PomodoroTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D46EEBCB27B0774800D4EF12 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = PomodoroTimer/Timer/TimerView.swift; sourceTree = SOURCE_ROOT; };
-		D4DD6CFD27B143040081AC8A /* Introduction */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Introduction; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 				819385E827AA7655005E2461 /* Timer */,
 				819385EA27AA7688005E2461 /* Info */,
 				819385E727AA7637005E2461 /* Topic */,
-				D4DD6CFD27B143040081AC8A /* Introduction */,
 				819385BB27AA74C3005E2461 /* PomodoroTimerApp.swift */,
 				819385BD27AA74C3005E2461 /* ContentView.swift */,
 				819385BF27AA74C6005E2461 /* Assets.xcassets */,
@@ -299,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				819385C327AA74C6005E2461 /* Preview Assets.xcassets in Resources */,
-				D4DD6CFE27B143040081AC8A /* Introduction in Resources */,
 				819385C027AA74C6005E2461 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
