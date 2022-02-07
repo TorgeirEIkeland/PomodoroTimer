@@ -19,47 +19,61 @@ struct TimerView: View {
                 
                 
                 if counter == 0 {
-                    Image("redTomato")
+                    Image("RedTomato")
                         .resizable()
                         .frame(width: 260, height: 260 )
                     
                 } else {
                     
-                    Image("greenTomato")
+                    Image("GreenTomato")
                         .resizable()
                         .frame(width: 260, height: 290 )
                     
                 }
                 
                 Text("11:11:11") // TIMER
-                
+                    .font(.system(size: 32))
                 
                 Spacer()
                     .frame(height: 250)
                 
                 
-                if counter == 0 {
+                if counter == 2 {
                     Button {
                         //Action
                     } label: {
                         Text("End Session")
                             .font(.system(size: 18))
-                            .clipShape(Rectangle())
                             .foregroundColor(Color.black)
-                            .cornerRadius(10)
+                                    .padding()
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.black, lineWidth: 1))
                     }
                 } else {
                     
                     Button {
                         //Action
                     } label: {
-                        
+                        Text("Skip break")
+                            .font(.system(size: 18))
+                            .foregroundColor(Color.black)
+                                    .padding()
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.black, lineWidth: 1))
                     }
                     
                     Button {
                         //Action
                     } label: {
-                        
+                        Text("End Session")
+                            .font(.system(size: 18))
+                            .foregroundColor(Color.black)
+                                    .padding()
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.black, lineWidth: 1))
                     }
                     
                     
