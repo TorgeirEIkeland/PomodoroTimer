@@ -9,87 +9,112 @@ import SwiftUI
 
 struct TimerView: View {
     
-    var counter = 0
+    var counter = 25
     
     var body: some View {
-        NavigationView{
+        
+        NavigationView {
+            
             VStack{
                 
-                Spacer()
-                
-                
-                if counter == 0 {
-                    Image("RedTomato")
-                        .resizable()
-                        .frame(width: 260, height: 260 )
+                VStack{
                     
-                } else {
+                    Spacer()
                     
-                    Image("GreenTomato")
-                        .resizable()
-                        .frame(width: 260, height: 290 )
+                    if counter > 0 {
+                        
+                        Image(Consts.Images.greenTomato)
+                            .resizable()
+                            .frame(width: 260, height: 290 )
+                            .blur(radius: 5)
+                            .overlay(
+                            Text("duwihdnjiweiowejwdnioewjdiowediowenoidweiomwejnioewjdoewdoewopdjewojdiewojdieowniohdwoduwihdnjiweiowejwdnioewjdiowediowenoidweiomwejnioewjdoewdoewopdjewojdiewojdieowniohdwoduwihdnjiweiowejwdnioewjdiowediowenoidweiomwejnioewjdoewdoewopdjewojdiewojdieowniohdwo")
+                                .font(.system(size: 18))
+                            
+                            )
+                        
+                    } else {
+                        
+                        Image(Consts.Images.redTomato)
+                            .resizable()
+                            .frame(width: 260, height: 260 )
+                        
+                    }
                     
+                    Spacer()
+                    
+                    
+                    if counter < 0 {
+                    Text("MM:SS") // TIMER logic
+                        .font(.system(size: 32))
+                   
+                    } else {
+                        
+                        Text("Pause timer")
+                            .font(.system(size: 32))
+
+                        Text("MM:SS") // pause timer logic
+                            .font(.system(size: 32))
+
+                        
+                    }
                 }
                 
-                Text("11:11:11") // TIMER
-                    .font(.system(size: 32))
-                
-                Spacer()
-                    .frame(height: 250)
-                
-                
-                if counter == 2 {
-                    Button {
-                        //Action
-                    } label: {
-                        Text("End Session")
-                            .font(.system(size: 18))
-                            .foregroundColor(Color.black)
-                                    .padding()
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.black, lineWidth: 1))
-                    }
-                } else {
+                VStack {
+                    Spacer()
                     
-                    Button {
-                        //Action
-                    } label: {
-                        Text("Skip break")
-                            .font(.system(size: 18))
-                            .foregroundColor(Color.black)
-                                    .padding()
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.black, lineWidth: 1))
+                    if counter < 0 {
+                        
+                        Button {
+                            //Action
+                        } label: {
+                            Text("Skip break")
+                                .font(.system(size: 18))
+                                .frame(width: 300)
+                                .foregroundColor(Color.black)
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.black, lineWidth: 1))
+                        }.background(Color(Consts.Color.lightGreen))
+                        
+                        Button {
+                            //Action
+                        } label: {
+                            Text("End Session")
+                                .font(.system(size: 18))
+                                .frame(width: 300)
+                                .foregroundColor(Color.black)
+                                .background(Color(Consts.Color.lightRed))
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.black, lineWidth: 1))
+                        }
+                        .background(Color(Consts.Color.lightRed))
+                        
+                    } else {
+                        
+                        Button {
+                            //Action
+                        } label: {
+                            Text("End Session")
+                                .font(.system(size: 18))
+                                .frame(width: 300)
+                                .foregroundColor(Color.black)
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.black, lineWidth: 1))
+                        }.background(Color(Consts.Color.lightRed))
+                        
                     }
-                    
-                    Button {
-                        //Action
-                    } label: {
-                        Text("End Session")
-                            .font(.system(size: 18))
-                            .foregroundColor(Color.black)
-                                    .padding()
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.black, lineWidth: 1))
-                    }
-                    
                     
                 }
-                
-                
-                
-                Spacer()
-                    .frame(height: 20)
-                
             }
-            
+            .navigationBarTitle(Text("Timer"), displayMode: .inline)
         }
-        
-        
-        
+        .edgesIgnoringSafeArea(.all)
         
         
         
