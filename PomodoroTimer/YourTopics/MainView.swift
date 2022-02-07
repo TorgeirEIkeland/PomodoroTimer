@@ -12,15 +12,16 @@ import UIKit
 
 struct MainView: View {
     
-//    @ObservedObject var uiAlertController: UIAlertController = UIAlertController()
+    @ObservedObject var uiAlertController: UIAlertController = UIAlertController()
+    
+    
+
 
     
     var body: some View {
         
         
-        let topics = ["JavaScript","WW2 History"]
-       
-        
+ 
         NavigationView{
             VStack(){
                 HStack(){
@@ -28,7 +29,7 @@ struct MainView: View {
                         Text("YOUR TOPICS")
                             .padding(.bottom, 10)
                         Button{
-//                            uiAlertController.showAlert()
+                            uiAlertController.showAlert(title: "", message: nil, preferredStyle: .alert)
                         
                         }label:{
                             Label("Add new topic", systemImage: Consts.Icons.plusIcon)
@@ -37,13 +38,19 @@ struct MainView: View {
                 }
                 VStack(){
                     List{
-                        ForEach(topics, id: \.self){ topic in
+                        ForEach(uiAlertController.topics, id: \.self){ topic in
                             Text(topic)
                         }
                     }
                 }
             }
         }
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
     }
 }
 
