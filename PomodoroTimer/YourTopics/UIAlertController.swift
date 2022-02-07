@@ -11,7 +11,7 @@ import UIKit
 
 
 class UIAlertController : ObservableObject{
-    
+/*
     var mainView: MainView = MainView()
     
     @Published var topics = ["JavaScript","WW2 History"]
@@ -36,7 +36,8 @@ class UIAlertController : ObservableObject{
             ac.present(ac, animated: true)
             
         }
-    }
+}
+ */
 }
 
 
