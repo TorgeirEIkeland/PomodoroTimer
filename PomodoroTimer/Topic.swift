@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Topic: Codable{
+struct TopicsData: Codable{
+    let topics: [Topic]
+}
+
+struct Topic: Codable, Hashable{
     var name: String
     var time: Int
 }

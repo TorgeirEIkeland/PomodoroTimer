@@ -7,39 +7,34 @@
 
 import Foundation
 import SwiftUI
-import UIKit
+
 
 
 struct MainView: View {
     
-    @ObservedObject var uiAlertController: UIAlertController = UIAlertController()
-    
-    
+    @ObservedObject var topicsDataService: TopicsDataService = TopicsDataService()
 
-
-    
     var body: some View {
-        
-        
- 
-        NavigationView{
-            VStack(){
+
+       NavigationView{
+           VStack(){
                 HStack(){
                     VStack(){
                         Text("YOUR TOPICS")
                             .padding(.bottom, 10)
                         Button{
-//                            uiAlertController.showAlert(title: "", message: nil, preferredStyle: .alert)
-                        
+
                         }label:{
                             Label("Add new topic", systemImage: Consts.Icons.plusIcon)
+                        }
                     }
-                }
                 }
                 VStack(){
                     List{
-                        ForEach(uiAlertController.topics, id: \.self){ topic in
-                            Text(topic)
+                        ForEach(topicsDataService.topics, id: \.self){ t in
+                           
+                            Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
+                            
                         }
                     }
                 }
@@ -48,8 +43,8 @@ struct MainView: View {
    }
 }
 
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}
+//struct MainView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainView()
+//    }
+//}
