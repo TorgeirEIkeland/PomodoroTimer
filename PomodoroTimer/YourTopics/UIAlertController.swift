@@ -5,22 +5,20 @@
 //  Created by Stine Marie Vørner on 06/02/2022.
 
 
-import Foundation
-import SwiftUI
-import UIKit
-
-
-class UIAlertController : ObservableObject{
-
-    var mainView: MainView = MainView()
-    
-    @Published var topics = ["JavaScript","WW2 History"]
-   
-
-    
-
-            
-        }
+//import Foundation
+//import SwiftUI
+//import UIKit
+//
+//
+//class UIAlertController : ObservableObject{
+//
+//    var mainView: MainView = MainView()
+//    var topics: Topics = Topics()
+//    
+//    topics.$myTopics 
+//
+//            
+//        }
 
 //private func showAlert(title: String, message: String?, preferredStyle: String?){
 //    let ac = UIAlertController(title: "Enter topic", message: nil, preferredStyle: context)
