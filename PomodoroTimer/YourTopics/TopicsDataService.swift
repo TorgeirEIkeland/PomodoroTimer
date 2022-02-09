@@ -17,12 +17,12 @@ class TopicsDataService: ObservableObject{
     }
     
     private func readTopicFile(){
-        if let url = Bundle.main.url(forResource: "topic", withExtension: "json"),
+        if let url = Bundle.main.url(forResource: "topics", withExtension: "json"),
            let data = try? Data(contentsOf: url){
             let decoder = JSONDecoder()
-            if let jsonTopic = try? decoder.decode(Topics.self, from: data){
+            if let jsonTopic = try? decoder.decode(TopicsData.self, from: data){
                 self.topics = jsonTopic.topics
-                print(topics)
+                print(jsonTopic)
             }
             
         }

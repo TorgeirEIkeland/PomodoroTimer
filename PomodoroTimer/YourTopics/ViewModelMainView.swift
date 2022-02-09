@@ -10,11 +10,6 @@ import SwiftUI
 
 class ViewModelMainView: ObservableObject {
     
-    @Published var name: String = "JavaScript"
-    @Published var time: Int = 50
-    
-    @Published var topics: [Topic] = []
-    
-    
-    
+  @Published var topics: [Topic] = []
+
 }

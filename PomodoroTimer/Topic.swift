@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Topics: Codable{
+struct TopicsData: Codable{
     let topics: [Topic]
 }
 

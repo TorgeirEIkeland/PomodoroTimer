@@ -12,14 +12,12 @@ import SwiftUI
 
 struct MainView: View {
     
-   // @ObservedObject var uiAlertController: UIAlertController = UIAlertController()
-   // @ObservedObject var topics: Topics = Topics()
-
+    @ObservedObject var topicsDataService: TopicsDataService = TopicsDataService()
 
     var body: some View {
 
        NavigationView{
-            VStack(){
+           VStack(){
                 HStack(){
                     VStack(){
                         Text("YOUR TOPICS")
@@ -33,10 +31,13 @@ struct MainView: View {
                 }
                 VStack(){
                     List{
-                   //     ForEach(topics.myTopics, id: \.self){ item in
-                   //     }
+                        ForEach(topicsDataService.topics, id: \.self){ t in
+                           
+                            Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
+                            
+                        }
                     }
-              }
+                }
             }
         }
    }
