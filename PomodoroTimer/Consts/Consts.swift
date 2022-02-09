@@ -15,8 +15,8 @@ struct Consts {
     }
     
     struct Images {
-        //static let redTomato =
-        //static let greenTomato =
+        static let redTomato = "RedTomato"
+        static let greenTomato = "GreenTomato"
     }
     
     struct Color {
