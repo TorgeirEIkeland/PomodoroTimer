@@ -1,5 +1,5 @@
 //
-//  TextFieldAlert.swift
+//  TopicView.swift
 //  PomodoroTimer
 //
 //  Created by Torgeir Eikeland on 07/02/2022.
@@ -8,58 +8,42 @@
 import Foundation
 import SwiftUI
 
-struct TextFieldAlrt<Presenting>: View where Presenting: View {
-
-    @Binding var isShowing: Bool
-    @Binding var text: String
-    let presenting: Presenting
-    let title: String
+struct TopicView: View{
+    @State private var isShowingAlert = false
+    @State private var alertInput = ""
     
+    var topic: Topic
 
-    var body: some View {
-        GeometryReader { (deviceSize: GeometryProxy) in
-            ZStack {
-                self.presenting
-                    .disabled(isShowing)
-                VStack {
-                    Text(self.title)
-                    TextField(self.title, text: self.$text)
-                        .keyboardType(.numberPad)
-                    Divider()
-                    HStack {
+    var body: some View{
+        NavigationView {
+                    VStack {
+                        Spacer()
+                        Text("420hrs 69mins")
+                        Spacer()
+                        
+                        
                         Button(action: {
                             withAnimation {
-                                self.isShowing.toggle()
+                                self.isShowingAlert.toggle()
                             }
                         }) {
-                            Text("Add time")
+                            Text("Show alert")
                         }
+                        Spacer()
+                        NavigationLink(destination: TopicView(topic: Topic(name: "Programming", time: 420))){
+                            Text("Start studying")
+                                .frame(width: 250, height: 75)
+                                .font(Font.headline.weight(.bold))
+                                .foregroundColor(Color.black)
+                                .padding()
+                                .background(Color(Consts.Color.greyColor))
+                                .cornerRadius(8)
+                        }
+                        Spacer().frame(height: 50)
                     }
+                    .navigationTitle(topic.name)
+                    .navigationBarTitleDisplayMode(.inline)
                 }
-                .padding()
-                .background(Color.white)
-                .cornerRadius(10)
-                .frame(
-                    width: deviceSize.size.width*0.7,
-                    height: deviceSize.size.height*0.7
-                )
-                .shadow(radius: 1)
-                .opacity(self.isShowing ? 1 : 0)
-            }
-        }
+                .textFieldAlert(isShowing: $isShowingAlert, text: $alertInput, title: "Time")
     }
-
-}
-
-extension View {
-
-    func textFieldAlert(isShowing: Binding<Bool>,
-                        text: Binding<String>,
-                        title: String) -> some View {
-        TextFieldAlert(isShowing: isShowing,
-                       text: text,
-                       presenting: self,
-                       title: title)
-    }
-
 }
