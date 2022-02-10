@@ -34,9 +34,9 @@ struct MainView: View {
                 }
                 VStack(){
                     List{
-                        ForEach(topicsDataService.topics, id: \.self){ t in
-                            NavigationLink(destination: TopicView(topic: t)){
-                                Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
+                        ForEach(topicsDataService.topics.indices, id: \.self){ index in
+                            NavigationLink(destination: TopicView(topic: topicsDataService.topics[index], index: index)){
+                                Label("\(topicsDataService.topics[index].name) - (\(topicsDataService.topics[index].time)h)", systemImage: Consts.Icons.arrowIcon)
                             }
                         }
                     }
