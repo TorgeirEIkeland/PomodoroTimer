@@ -13,13 +13,14 @@ struct TopicView: View{
     @State private var alertInput = ""
     
     var topic: Topic
+    let index: Int
 
     var body: some View{
         HStack{
             Spacer()
                     VStack {
                         Spacer()
-                        Text("420hrs 69mins")
+                        Text("Shows total time spent studying current topic")
                         Spacer()
                         
                         
@@ -28,7 +29,7 @@ struct TopicView: View{
                                 self.isShowingAlert.toggle()
                             }
                         }) {
-                            Text("Show alert")
+                            Text("Have you been to a lecture? Or forgotten to add time studying this topic? Add this time manually here")
                         }
                         Spacer()
                         NavigationLink(destination: TimerView()){
@@ -37,8 +38,11 @@ struct TopicView: View{
                                 .font(Font.headline.weight(.bold))
                                 .foregroundColor(Color.black)
                                 .padding()
-                                .background(Color(Consts.Color.greyColor))
+                                .background(Color(Consts.Color.lightGreen))
                                 .cornerRadius(8)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.black, lineWidth: 1))
                         }
                         Spacer().frame(height: 50)
                     }
