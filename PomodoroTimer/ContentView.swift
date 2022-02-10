@@ -46,11 +46,11 @@ struct ContentView: View {
                             
                             leading:
                                 HStack {
-                                    Image("redpomo")
+                                    Image("RedTomato")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 60, height: 60)
-                                    Image("greenpomo")
+                                    Image("GreenTomato")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 60, height: 60)
