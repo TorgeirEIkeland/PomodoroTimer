@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PomodoroLandingView: View {
    
     @State var title: String = "Pomodoro is a study technique that gives you 25 studytime and 5 minutes rest. Pomodoro is a study technique that gives you 25 studytime and 5 minutes rest.."
     

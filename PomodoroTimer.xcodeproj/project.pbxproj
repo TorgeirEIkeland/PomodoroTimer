@@ -9,18 +9,19 @@
 /* Begin PBXBuildFile section */
 		14D6346F27B536F4009BEA41 /* TechniqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6346E27B536F4009BEA41 /* TechniqueView.swift */; };
 		14D6347127B53709009BEA41 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6347027B53709009BEA41 /* ButtonView.swift */; };
-		5F3CD06527B0041400BAF2E0 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CD06427B0041400BAF2E0 /* UIAlertController.swift */; };
 		5F3CD06727B1405800BAF2E0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CD06627B1405800BAF2E0 /* MainView.swift */; };
 		5F5767D927AD450800F387F5 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5767D827AD450800F387F5 /* PlusButton.swift */; };
 		5F5767DB27AD453300F387F5 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5767DA27AD453300F387F5 /* Consts.swift */; };
 		5F7D382B27B28DA000C2916F /* ViewModelMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D382A27B28DA000C2916F /* ViewModelMainView.swift */; };
 		5F7D382D27B296DD00C2916F /* TopicsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D382C27B296DD00C2916F /* TopicsDataService.swift */; };
 		5F7D383127B3CA9600C2916F /* topics.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D383027B3CA9500C2916F /* topics.json */; };
+		5F7D383327B553D600C2916F /* AlertAddTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D383227B553D600C2916F /* AlertAddTopic.swift */; };
+		5F7D383627B5630F00C2916F /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D383527B5630F00C2916F /* PomodoroModel.swift */; };
 		812F467927B14DAC008FB107 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F467827B14DAC008FB107 /* Topic.swift */; };
 		812F468B27B531AA008FB107 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F468A27B531AA008FB107 /* TopicView.swift */; };
 		812F468D27B531EC008FB107 /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F468C27B531EC008FB107 /* TextFieldAlert.swift */; };
 		819385BC27AA74C3005E2461 /* PomodoroTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385BB27AA74C3005E2461 /* PomodoroTimerApp.swift */; };
-		819385BE27AA74C3005E2461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385BD27AA74C3005E2461 /* ContentView.swift */; };
+		819385BE27AA74C3005E2461 /* PomodoroLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385BD27AA74C3005E2461 /* PomodoroLandingView.swift */; };
 		819385C027AA74C6005E2461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819385BF27AA74C6005E2461 /* Assets.xcassets */; };
 		819385C327AA74C6005E2461 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819385C227AA74C6005E2461 /* Preview Assets.xcassets */; };
 		819385CD27AA74C7005E2461 /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385CC27AA74C7005E2461 /* PomodoroTimerTests.swift */; };
@@ -51,19 +52,20 @@
 /* Begin PBXFileReference section */
 		14D6346E27B536F4009BEA41 /* TechniqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueView.swift; sourceTree = "<group>"; };
 		14D6347027B53709009BEA41 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		5F3CD06427B0041400BAF2E0 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		5F3CD06627B1405800BAF2E0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5F5767D827AD450800F387F5 /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		5F5767DA27AD453300F387F5 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		5F7D382A27B28DA000C2916F /* ViewModelMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelMainView.swift; sourceTree = "<group>"; };
 		5F7D382C27B296DD00C2916F /* TopicsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsDataService.swift; sourceTree = "<group>"; };
 		5F7D383027B3CA9500C2916F /* topics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topics.json; sourceTree = "<group>"; };
+		5F7D383227B553D600C2916F /* AlertAddTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAddTopic.swift; sourceTree = "<group>"; };
+		5F7D383527B5630F00C2916F /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		812F467827B14DAC008FB107 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		812F468A27B531AA008FB107 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		812F468C27B531EC008FB107 /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
 		819385B827AA74C3005E2461 /* PomodoroTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819385BB27AA74C3005E2461 /* PomodoroTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerApp.swift; sourceTree = "<group>"; };
-		819385BD27AA74C3005E2461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		819385BD27AA74C3005E2461 /* PomodoroLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroLandingView.swift; sourceTree = "<group>"; };
 		819385BF27AA74C6005E2461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819385C227AA74C6005E2461 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		819385C827AA74C6005E2461 /* PomodoroTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				5F3CD06627B1405800BAF2E0 /* MainView.swift */,
+				5F7D383227B553D600C2916F /* AlertAddTopic.swift */,
 				5F7D382C27B296DD00C2916F /* TopicsDataService.swift */,
 				5F7D382A27B28DA000C2916F /* ViewModelMainView.swift */,
-				5F3CD06427B0041400BAF2E0 /* UIAlertController.swift */,
 				5F7D383027B3CA9500C2916F /* topics.json */,
 				5F5767D727AD44E600F387F5 /* Buttons */,
 			);
@@ -128,6 +130,15 @@
 				5F5767DA27AD453300F387F5 /* Consts.swift */,
 			);
 			path = Consts;
+			sourceTree = "<group>";
+		};
+		5F7D383427B562ED00C2916F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				812F467827B14DAC008FB107 /* Topic.swift */,
+				5F7D383527B5630F00C2916F /* PomodoroModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		819385AF27AA74C3005E2461 = {
@@ -159,10 +170,10 @@
 				819385EA27AA7688005E2461 /* Info */,
 				819385E727AA7637005E2461 /* Topic */,
 				819385BB27AA74C3005E2461 /* PomodoroTimerApp.swift */,
-				819385BD27AA74C3005E2461 /* ContentView.swift */,
+				819385BD27AA74C3005E2461 /* PomodoroLandingView.swift */,
 				819385BF27AA74C6005E2461 /* Assets.xcassets */,
 				819385C127AA74C6005E2461 /* Preview Content */,
-				812F467827B14DAC008FB107 /* Topic.swift */,
+				5F7D383427B562ED00C2916F /* Model */,
 			);
 			path = PomodoroTimer;
 			sourceTree = "<group>";
@@ -381,15 +392,16 @@
 				5F7D382B27B28DA000C2916F /* ViewModelMainView.swift in Sources */,
 				14D6347127B53709009BEA41 /* ButtonView.swift in Sources */,
 				5F7D382D27B296DD00C2916F /* TopicsDataService.swift in Sources */,
+				5F7D383627B5630F00C2916F /* PomodoroModel.swift in Sources */,
 				5F3CD06727B1405800BAF2E0 /* MainView.swift in Sources */,
 				D4AF03F227B1BAEC00A6D107 /* TimerViewModel.swift in Sources */,
-				819385BE27AA74C3005E2461 /* ContentView.swift in Sources */,
+				819385BE27AA74C3005E2461 /* PomodoroLandingView.swift in Sources */,
 				5F5767DB27AD453300F387F5 /* Consts.swift in Sources */,
 				819385BC27AA74C3005E2461 /* PomodoroTimerApp.swift in Sources */,
 				812F468D27B531EC008FB107 /* TextFieldAlert.swift in Sources */,
-				5F3CD06527B0041400BAF2E0 /* UIAlertController.swift in Sources */,
 				5F5767D927AD450800F387F5 /* PlusButton.swift in Sources */,
 				812F468B27B531AA008FB107 /* TopicView.swift in Sources */,
+				5F7D383327B553D600C2916F /* AlertAddTopic.swift in Sources */,
 				14D6346F27B536F4009BEA41 /* TechniqueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

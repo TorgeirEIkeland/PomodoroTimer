@@ -13,6 +13,8 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var topicsDataService: TopicsDataService = TopicsDataService()
+    @State private var showAlert = false
+    @State private var input = ""
 
     var body: some View {
 
@@ -22,7 +24,7 @@ struct MainView: View {
                         Text("YOUR TOPICS")
                             .padding(.bottom, 30)
                         Button{
-
+                            self.showAlert.toggle()
                         }label:{
                             Label("Add new topic", systemImage: Consts.Icons.plusIcon)
                         }
@@ -48,9 +50,11 @@ struct MainView: View {
                    }
                 }
             }
-       .navigationBarHidden(true)
+           .addTopicAlert(isShowing: $showAlert, text: $input, title: "Add Topic")
+           .navigationBarHidden(true)
    }
 }
+
 
 //struct MainView_Previews: PreviewProvider {
 //    static var previews: some View {
