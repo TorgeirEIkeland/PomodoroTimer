@@ -20,7 +20,7 @@ struct MainView: View {
                 HStack(){
                     VStack(){
                         Text("YOUR TOPICS")
-                            .padding(.bottom, 10)
+                            .padding(.bottom, 30)
                         Button{
 
                         }label:{
@@ -31,14 +31,21 @@ struct MainView: View {
                 VStack(){
                     List{
                         ForEach(topicsDataService.topics, id: \.self){ t in
-                           
-                                    NavigationLink(destination: TopicView(topic: t)){
-                                        Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
-
-                                }
-                            
+                            NavigationLink(destination: TopicView(topic: t)){
+                                Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
+                            }
                         }
                     }
+                }
+                VStack(){
+                   HStack(){
+                       NavigationLink(destination: TechniqueView(color: .black)){
+                           Text("What is pomodoro?")
+                       }.padding()
+                       Spacer()
+                       Text("Edit")
+                           .padding()
+                   }
                 }
             }
        .navigationBarHidden(true)
