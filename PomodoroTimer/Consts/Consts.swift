@@ -22,6 +22,7 @@ struct Consts {
     struct Color {
         static let textColor = "TextColor"
         static let greyColor = "GreyColor"
+        
         static let tomatoRed = "TomatoRed"
         static let lightRed = "LightRed"
         static let tomatoGreen = "TomatoGreen"
