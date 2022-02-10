@@ -28,6 +28,7 @@ struct AlertAddTopic<Presenting>: View where Presenting: View{
                         Button(action: {
                             withAnimation {
                                 self.isShowing.toggle()
+                           //     vm.intentAddTopic(to: "\($input)")
                             }
                         }) {
                             Text("Add new topic")

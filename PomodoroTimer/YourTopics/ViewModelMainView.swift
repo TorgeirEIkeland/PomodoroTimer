@@ -10,6 +10,12 @@ import SwiftUI
 
 class ViewModelMainView: ObservableObject {
     
+    var model: PomodoroModel = PomodoroModel()
+    
   @Published var topics: [Topic] = []
 
+    func intentAddTopic(to: String){
+        
+        model.addTopic(to: to)
+    }
 }
