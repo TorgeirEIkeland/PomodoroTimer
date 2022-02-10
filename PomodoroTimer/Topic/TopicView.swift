@@ -15,7 +15,8 @@ struct TopicView: View{
     var topic: Topic
 
     var body: some View{
-        NavigationView {
+        HStack{
+            Spacer()
                     VStack {
                         Spacer()
                         Text("420hrs 69mins")
@@ -30,7 +31,7 @@ struct TopicView: View{
                             Text("Show alert")
                         }
                         Spacer()
-                        NavigationLink(destination: TopicView(topic: Topic(name: "Programming", time: 420))){
+                        NavigationLink(destination: TimerView()){
                             Text("Start studying")
                                 .frame(width: 250, height: 75)
                                 .font(Font.headline.weight(.bold))
@@ -41,9 +42,10 @@ struct TopicView: View{
                         }
                         Spacer().frame(height: 50)
                     }
-                    .navigationTitle(topic.name)
-                    .navigationBarTitleDisplayMode(.inline)
-                }
-                .textFieldAlert(isShowing: $isShowingAlert, text: $alertInput, title: "Time")
+            Spacer()
+    }
+        .textFieldAlert(isShowing: $isShowingAlert, text: $alertInput, title: "Time")
+        .navigationTitle(topic.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

@@ -14,7 +14,6 @@ struct TechniqueView: View {
     var color: Color
     
     var body: some View {
-        //NavigationView{
         
         VStack (spacing: 30){
             Text(title1)
@@ -46,8 +45,7 @@ struct TechniqueView: View {
                 
             })
             
-            //}
-        }
+            }
         
     }
 }

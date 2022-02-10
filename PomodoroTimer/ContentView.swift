@@ -13,7 +13,6 @@ struct ContentView: View {
     
     var body: some View {
         
-            NavigationView{
                 VStack (spacing: 100) {
                     Text(title)
                         .font(.title)
@@ -67,7 +66,6 @@ struct ContentView: View {
                             
                         )
                 }
-            }
             .accentColor(Color(.label))
             
         }
