@@ -42,31 +42,7 @@ struct ContentView: View {
                     })
                     Spacer()
                     
-                        .navigationBarItems(
-                            
-                            leading:
-                                HStack {
-                                    Image("RedTomato")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 60, height: 60)
-                                    Image("GreenTomato")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 60, height: 60)
-                                }
-                            ,
-                            trailing:
-                                Image("timepomo")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60, height: 60)
-                            
-                                .accentColor(.red)
-                            
-                        )
                 }
-            .accentColor(Color(.label))
             
         }
         
