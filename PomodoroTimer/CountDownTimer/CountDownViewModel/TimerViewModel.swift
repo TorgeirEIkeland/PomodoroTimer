@@ -12,15 +12,21 @@ import SwiftUI
 class TimerViewModel: ObservableObject {
     
     @Published var quotes: [Quote] = []
-    
-    
+    @Published var timer = Timer.publish(every: 1, on: .main, in: .common)
+   // @Published var breakTime: Bool = false
+    @Published var showAlert: Bool = false
+    @Published var timeRemaining: Int = 3 {
+        didSet{
+            if timeRemaining == 0 {
+                showAlert = true 
+            }
+        }
+    }
     
     
     init(){
         fetchData()
     }
-    
-    
     
     
     func fetchData() {
