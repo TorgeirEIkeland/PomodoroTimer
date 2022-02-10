@@ -29,7 +29,6 @@
 		D46EEBCC27B0774800D4EF12 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EEBCB27B0774800D4EF12 /* TimerView.swift */; };
 		D4AF03F027B1BADC00A6D107 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF03EF27B1BADC00A6D107 /* TimerData.swift */; };
 		D4AF03F227B1BAEC00A6D107 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF03F127B1BAEC00A6D107 /* TimerViewModel.swift */; };
-		D4DD6D0327B14BFC0081AC8A /* dummyTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD6D0227B14BFC0081AC8A /* dummyTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +74,6 @@
 		D46EEBCB27B0774800D4EF12 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = PomodoroTimer/CountDownTimer/CountDownView/TimerView.swift; sourceTree = SOURCE_ROOT; };
 		D4AF03EF27B1BADC00A6D107 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
 		D4AF03F127B1BAEC00A6D107 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		D4DD6D0227B14BFC0081AC8A /* dummyTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummyTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +204,6 @@
 		819385EA27AA7688005E2461 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				D4DD6D0227B14BFC0081AC8A /* dummyTwo.swift */,
 				14D6346E27B536F4009BEA41 /* TechniqueView.swift */,
 				14D6347027B53709009BEA41 /* ButtonView.swift */,
 			);
@@ -390,7 +387,6 @@
 				5F5767DB27AD453300F387F5 /* Consts.swift in Sources */,
 				819385BC27AA74C3005E2461 /* PomodoroTimerApp.swift in Sources */,
 				812F468D27B531EC008FB107 /* TextFieldAlert.swift in Sources */,
-				D4DD6D0327B14BFC0081AC8A /* dummyTwo.swift in Sources */,
 				5F3CD06527B0041400BAF2E0 /* UIAlertController.swift in Sources */,
 				5F5767D927AD450800F387F5 /* PlusButton.swift in Sources */,
 				812F468B27B531AA008FB107 /* TopicView.swift in Sources */,

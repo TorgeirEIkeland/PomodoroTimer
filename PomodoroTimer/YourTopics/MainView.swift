@@ -16,7 +16,6 @@ struct MainView: View {
 
     var body: some View {
 
-       NavigationView{
            VStack(){
                 HStack(){
                     VStack(){
@@ -33,13 +32,16 @@ struct MainView: View {
                     List{
                         ForEach(topicsDataService.topics, id: \.self){ t in
                            
-                            Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
+                                    NavigationLink(destination: TopicView(topic: t)){
+                                        Label("\(t.name) - (\(t.time)h)", systemImage: Consts.Icons.arrowIcon)
+
+                                }
                             
                         }
                     }
                 }
             }
-        }
+       .navigationBarHidden(true)
    }
 }
 

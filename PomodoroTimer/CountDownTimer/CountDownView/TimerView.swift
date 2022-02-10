@@ -19,9 +19,6 @@ struct TimerView: View {
     //var counter = 0
     
     var body: some View {
-        
-        NavigationView {
-           
             VStack{
                 
                 VStack{
@@ -129,7 +126,6 @@ struct TimerView: View {
                             .frame(height: 5)
                     }
                 }
-            }
             .navigationBarTitle(Text("Timer"), displayMode: .inline)
         }
         
