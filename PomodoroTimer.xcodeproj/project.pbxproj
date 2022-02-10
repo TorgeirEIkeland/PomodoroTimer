@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14D6346527B53007009BEA41 /* TechniqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6346427B53007009BEA41 /* TechniqueView.swift */; };
+		14D6346727B5319B009BEA41 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6346627B5319B009BEA41 /* ButtonView.swift */; };
 		5F3CD06527B0041400BAF2E0 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CD06427B0041400BAF2E0 /* UIAlertController.swift */; };
 		5F3CD06727B1405800BAF2E0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CD06627B1405800BAF2E0 /* MainView.swift */; };
 		5F5767D927AD450800F387F5 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5767D827AD450800F387F5 /* PlusButton.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14D6346427B53007009BEA41 /* TechniqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniqueView.swift; sourceTree = "<group>"; };
+		14D6346627B5319B009BEA41 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		5F3CD06427B0041400BAF2E0 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		5F3CD06627B1405800BAF2E0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5F5767D827AD450800F387F5 /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				D4DD6D0227B14BFC0081AC8A /* dummyTwo.swift */,
+				14D6346427B53007009BEA41 /* TechniqueView.swift */,
+				14D6346627B5319B009BEA41 /* ButtonView.swift */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -371,6 +377,7 @@
 			files = (
 				D4AF03F027B1BADC00A6D107 /* TimerData.swift in Sources */,
 				D46EEBCC27B0774800D4EF12 /* TimerView.swift in Sources */,
+				14D6346727B5319B009BEA41 /* ButtonView.swift in Sources */,
 				812F467927B14DAC008FB107 /* Topic.swift in Sources */,
 				5F7D382B27B28DA000C2916F /* ViewModelMainView.swift in Sources */,
 				5F7D382D27B296DD00C2916F /* TopicsDataService.swift in Sources */,
@@ -383,6 +390,7 @@
 				D4DD6D0327B14BFC0081AC8A /* dummyTwo.swift in Sources */,
 				5F3CD06527B0041400BAF2E0 /* UIAlertController.swift in Sources */,
 				5F5767D927AD450800F387F5 /* PlusButton.swift in Sources */,
+				14D6346527B53007009BEA41 /* TechniqueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
