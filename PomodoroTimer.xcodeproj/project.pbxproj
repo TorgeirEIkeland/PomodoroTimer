@@ -15,6 +15,8 @@
 		5F7D382D27B296DD00C2916F /* TopicsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7D382C27B296DD00C2916F /* TopicsDataService.swift */; };
 		5F7D383127B3CA9600C2916F /* topics.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D383027B3CA9500C2916F /* topics.json */; };
 		812F467927B14DAC008FB107 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F467827B14DAC008FB107 /* Topic.swift */; };
+		812F468B27B531AA008FB107 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F468A27B531AA008FB107 /* TopicView.swift */; };
+		812F468D27B531EC008FB107 /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F468C27B531EC008FB107 /* TextFieldAlert.swift */; };
 		819385BC27AA74C3005E2461 /* PomodoroTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385BB27AA74C3005E2461 /* PomodoroTimerApp.swift */; };
 		819385BE27AA74C3005E2461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819385BD27AA74C3005E2461 /* ContentView.swift */; };
 		819385C027AA74C6005E2461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819385BF27AA74C6005E2461 /* Assets.xcassets */; };
@@ -25,7 +27,6 @@
 		D46EEBCC27B0774800D4EF12 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46EEBCB27B0774800D4EF12 /* TimerView.swift */; };
 		D4AF03F027B1BADC00A6D107 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF03EF27B1BADC00A6D107 /* TimerData.swift */; };
 		D4AF03F227B1BAEC00A6D107 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF03F127B1BAEC00A6D107 /* TimerViewModel.swift */; };
-		D4DD6D0027B14B480081AC8A /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD6CFF27B14B480081AC8A /* dummy.swift */; };
 		D4DD6D0327B14BFC0081AC8A /* dummyTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD6D0227B14BFC0081AC8A /* dummyTwo.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		5F7D382C27B296DD00C2916F /* TopicsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsDataService.swift; sourceTree = "<group>"; };
 		5F7D383027B3CA9500C2916F /* topics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topics.json; sourceTree = "<group>"; };
 		812F467827B14DAC008FB107 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		812F468A27B531AA008FB107 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
+		812F468C27B531EC008FB107 /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
 		819385B827AA74C3005E2461 /* PomodoroTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819385BB27AA74C3005E2461 /* PomodoroTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerApp.swift; sourceTree = "<group>"; };
 		819385BD27AA74C3005E2461 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,7 +71,6 @@
 		D46EEBCB27B0774800D4EF12 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = PomodoroTimer/CountDownTimer/CountDownView/TimerView.swift; sourceTree = SOURCE_ROOT; };
 		D4AF03EF27B1BADC00A6D107 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
 		D4AF03F127B1BAEC00A6D107 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		D4DD6CFF27B14B480081AC8A /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		D4DD6D0227B14BFC0081AC8A /* dummyTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummyTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,7 +193,8 @@
 		819385E727AA7637005E2461 /* Topic */ = {
 			isa = PBXGroup;
 			children = (
-				D4DD6CFF27B14B480081AC8A /* dummy.swift */,
+				812F468A27B531AA008FB107 /* TopicView.swift */,
+				812F468C27B531EC008FB107 /* TextFieldAlert.swift */,
 			);
 			path = Topic;
 			sourceTree = "<group>";
@@ -376,13 +379,14 @@
 				5F7D382D27B296DD00C2916F /* TopicsDataService.swift in Sources */,
 				5F3CD06727B1405800BAF2E0 /* MainView.swift in Sources */,
 				D4AF03F227B1BAEC00A6D107 /* TimerViewModel.swift in Sources */,
-				D4DD6D0027B14B480081AC8A /* dummy.swift in Sources */,
 				819385BE27AA74C3005E2461 /* ContentView.swift in Sources */,
 				5F5767DB27AD453300F387F5 /* Consts.swift in Sources */,
 				819385BC27AA74C3005E2461 /* PomodoroTimerApp.swift in Sources */,
+				812F468D27B531EC008FB107 /* TextFieldAlert.swift in Sources */,
 				D4DD6D0327B14BFC0081AC8A /* dummyTwo.swift in Sources */,
 				5F3CD06527B0041400BAF2E0 /* UIAlertController.swift in Sources */,
 				5F5767D927AD450800F387F5 /* PlusButton.swift in Sources */,
+				812F468B27B531AA008FB107 /* TopicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
