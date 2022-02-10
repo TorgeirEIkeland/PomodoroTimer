@@ -13,6 +13,7 @@ import SwiftUI
 struct MainView: View {
     
     @ObservedObject var topicsDataService: TopicsDataService = TopicsDataService()
+    @ObservedObject var vm: ViewModelMainView = ViewModelMainView()
     @State private var showAlert = false
     @State private var input = ""
 
@@ -25,6 +26,7 @@ struct MainView: View {
                             .padding(.bottom, 30)
                         Button{
                             self.showAlert.toggle()
+                    //        vm.intentAddTopic(to: "\($input)")
                         }label:{
                             Label("Add new topic", systemImage: Consts.Icons.plusIcon)
                         }
