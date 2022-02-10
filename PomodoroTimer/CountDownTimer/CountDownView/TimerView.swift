@@ -9,16 +9,12 @@ import SwiftUI
 struct TimerView: View {
     
     @StateObject var viewModel = TimerViewModel()
-    // @State private var showAlert = false
     @State var breakTime = false
     
     var body: some View {
         
-        
         VStack{
-        
             VStack{
-                
                 VStack{
                     
                     Spacer()
@@ -36,16 +32,14 @@ struct TimerView: View {
                         
                     } else {
                         
-                        
-                        
                         Image(Consts.Images.greenTomato)
                             .resizable()
                             .frame(width: 260, height: 290 )
                             .blur(radius: 5)
                             .overlay(
-                                Text("\(viewModel.quotes[0].q)\n\n\(viewModel.quotes[0].a)")
+                                Text("\(viewModel.quotes[0].q)\n\n-\(viewModel.quotes[0].a)")
                                     .font(.system(size: 18))
-                            )
+                        )
                     }
                 }
                 
@@ -53,24 +47,24 @@ struct TimerView: View {
                     Text("\(viewModel.timeRemaining)")
                         .font(.system(size: 32))
                     
-                    
                 } else {
                     
                     Text("Pause timer")
                         .font(.system(size: 32))
                     
-                    Text("MM:SS") // pause timer logic
+                    Text("05:00") // pause timer logic
                         .font(.system(size: 32))
                     
                 }
+                
             }.onReceive(viewModel.timer) {
-                timer in if viewModel.timeRemaining > 0 {  //TODO: Timer
+                timer in if viewModel.timeRemaining > 0 {
                     viewModel.timeRemaining -= 1
                 }
             }
             
             Spacer()
-            //PAUSE
+
             VStack {
                 
                 Spacer()
@@ -79,7 +73,7 @@ struct TimerView: View {
                     
                     
                     Button {
-                        //Action
+                        //action
                     } label: {
                         Text("Skip break")
                             .font(.system(size: 18))
@@ -90,29 +84,26 @@ struct TimerView: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.black, lineWidth: 1))
                     }.background(Color(Consts.Color.lightGreen))
+                        .cornerRadius(10)
                     
-                    Button {
-                        //Action
-                    } label: {
+                    NavigationLink(destination: MainView()){
                         Text("End Session")
                             .font(.system(size: 18))
                             .frame(width: 300)
                             .foregroundColor(Color.black)
-                            .background(Color(Consts.Color.lightRed))
                             .padding()
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.black, lineWidth: 1))
                     }
                     .background(Color(Consts.Color.lightRed))
+                    .cornerRadius(10)
                     Spacer()
                         .frame(height: 5)
                     
                 } else {
                     
-                    Button {
-                        //Action
-                    } label: {
+                    NavigationLink(destination: MainView()){
                         Text("End Session")
                             .font(.system(size: 18))
                             .frame(width: 300)
@@ -123,15 +114,17 @@ struct TimerView: View {
                                     .stroke(Color.black, lineWidth: 1))
                     }
                     .background(Color(Consts.Color.lightRed))
+                    .cornerRadius(10)
                     Spacer()
                         .frame(height: 5)
                 }
             }
-            .navigationBarTitle(Text("Timer"), displayMode: .inline)
-        }
+        }.navigationBarTitle(Text("Timer"), displayMode: .inline)
+        
         
         
     }
+    
 }
 
 

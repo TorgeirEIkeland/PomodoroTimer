@@ -11,7 +11,7 @@ struct ButtonView: View {
     var color: Color
     var title: String
     @State var to :CGFloat = 0
-    @State var timeOuration = 1500
+    @State var timeOuration = "25 min"
     @State var isTimerStarted = false
     
     var body: some View {
